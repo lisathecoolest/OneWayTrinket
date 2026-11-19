@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Comic Website</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <p>ONE WAY COMIC</p>
+</header>
+
+<main>
+
+    <section class="intro">
+
+        <p class="subtitle">v.s_gallery_</p>
+
+        <h1>One Way Trinket</h1>
+
+        <p class="description">
+            An illustrated story about fashion, identity and the city.
+        </p>
+
+    </section>
+
+    <section class="flipbook-section">
+
+        <p class="subtitle">READ THE STORY</p>
+
+        <div class="book-stage">
+
+            <div id="book">
+
+ <!-- FRONT COVER -->
+<div class="page cover" data-density="hard">
+    <img src="images/front-cover.jpg" alt="Front Cover">
+</div>
+
+<!--  PAGE 1 -->
+<div class="page" data-density="soft">
+    <img src="images/page-01.jpg" alt="Comic Page 1">
+</div>
+
+<!--  PAGE 2 -->
+<div class="page" data-density="soft">
+    <img src="images/page-02.jpg" alt="Comic Page 2">
+</div>
+
+<!--  PAGE 3 -->
+<div class="page" data-density="soft">
+    <img src="images/page-03.jpg" alt="Comic Page 3">
+</div>
+
+<!--  PAGE 4 -->
+<div class="page" data-density="soft">
+    <img src="images/page-04.jpg" alt="Comic Page 4">
+</div>
+
+<!-- BACK COVER -->
+<div class="page cover" data-density="hard">
+    <img src="images/back-cover.jpg" alt="Back Cover">
+</div>
+
+            </div>
+
+        </div>
+
+        <p class="flip-instruction">
+            CLICK OR DRAG CORNER TO TURN THE PAGE
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Designed and illustrated by Lisa Trunova</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
