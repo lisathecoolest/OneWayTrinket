@@ -15,7 +15,6 @@ body {
     cursor: url('images/cursor.png') 0 0, auto;
 }
 
-
 /* HEADER */
 
 header {
@@ -29,7 +28,6 @@ header p {
     letter-spacing: 3px;
 }
 
-
 /* MAIN SECTION */
 
 main {
@@ -41,7 +39,6 @@ main {
     text-align: center;
     padding: 120px 20px 20px;
 }
-
 
 /* TITLE */
 
@@ -69,7 +66,6 @@ h1 {
     letter-spacing: 1px;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -84,7 +80,6 @@ footer p {
     font-size: 9px;
     letter-spacing: 2px;
 }
-
 
 /* MOBILE VERSION */
 
@@ -209,4 +204,24 @@ footer p {
     border-bottom: 4px solid white;
     border-right: 4px solid white;
     border-left: none;
+}
+
+/* MOBILE FLIPBOOK SCALING */
+
+@media screen and (max-width: 600px) {
+
+    .book-stage {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #book {
+        transform: scale(0.55);
+        transform-origin: center center;
+        margin: 0 auto;
+    }
+
 }
