@@ -205,23 +205,3 @@ footer p {
     border-right: 4px solid white;
     border-left: none;
 }
-
-/* MOBILE FLIPBOOK SCALING */
-
-@media screen and (max-width: 600px) {
-
-    .book-stage {
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #book {
-        transform: scale(0.55);
-        transform-origin: center center;
-        margin: 0 auto;
-    }
-
-}

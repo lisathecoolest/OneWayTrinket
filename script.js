@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-   const book = document.getElementById("book");
+const book = document.getElementById("book");
 
 if (typeof St === "undefined") {
     console.error("StPageFlip library was not loaded!");
