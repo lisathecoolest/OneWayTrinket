@@ -7,10 +7,12 @@ if (typeof St === "undefined") {
     return;
 }
 
+const isMobile = window.matchMedia("(max-width: 600px)").matches;
+
 const pageFlip = new St.PageFlip(book, {
 
-    width: 500,
-    height: 600,
+    width: isMobile ? 175 : 500,
+    height: isMobile ? 210 : 600,
 
     size: "fixed",
 
