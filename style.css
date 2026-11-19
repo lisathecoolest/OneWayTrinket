@@ -206,3 +206,10 @@ footer p {
     border-left: none;
 }
 
+@media screen and (max-width: 600px) {
+
+    .stf__parent {
+        zoom: 0.38;
+    }
+
+}
