@@ -206,12 +206,12 @@ footer p {
     border-left: none;
 }
 
-/* Page 5: top, bottom and right edge */
+/* Page 5: top, bottom and left edge */
 .page:nth-child(6) {
     border-top: 4px solid white;
     border-bottom: 4px solid white;
-    border-right: 4px solid white;
-    border-left: none;
+    border-left: 4px solid white;
+    border-right: none;
 }
 
 @media screen and (max-width: 600px) {
