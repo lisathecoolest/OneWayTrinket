@@ -221,3 +221,95 @@ footer p {
     }
 
 }
+
+/* =================================
+   TRINKET 01
+================================= */
+
+.book-stage {
+    position: relative;
+}
+
+.trinket-button {
+    position: absolute;
+
+    /* Position to the right of the comic */
+    left: calc(50% + 500px);
+    top: 50%;
+
+    width: 120px;
+    height: auto;
+
+    border: none;
+    padding: 0;
+    background: none;
+
+    cursor: url('images/cursor-hover.png') 0 0, pointer;
+
+    z-index: 10;
+
+    transform: translateY(-50%);
+    scale: 1;
+
+    transition: scale 0.2s ease;
+}
+
+.trinket-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    transform-origin: 50% 5%;
+}
+
+/* Slight enlargement on hover */
+
+.trinket-button:hover {
+    scale: 1.08;
+}
+
+/* =================================
+   SWING ANIMATIONS
+================================= */
+
+.trinket-button.swing-one img {
+    animation: swingOne 0.9s ease-in-out;
+}
+
+.trinket-button.swing-two img {
+    animation: swingTwo 1.1s ease-in-out;
+}
+
+.trinket-button.swing-three img {
+    animation: swingThree 0.75s ease-in-out;
+}
+
+/* Animation 1: gentle swing */
+
+@keyframes swingOne {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(13deg); }
+    50%  { transform: rotate(-10deg); }
+    75%  { transform: rotate(6deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Animation 2: bigger swing */
+
+@keyframes swingTwo {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(-18deg); }
+    45%  { transform: rotate(14deg); }
+    70%  { transform: rotate(-7deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Animation 3: quick little swing */
+
+@keyframes swingThree {
+    0%   { transform: rotate(0deg); }
+    30%  { transform: rotate(16deg); }
+    60%  { transform: rotate(-12deg); }
+    80%  { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
