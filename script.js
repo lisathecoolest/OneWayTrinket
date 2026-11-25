@@ -24,9 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".page")
     );
 
-        // TRINKET INTERACTION
 
-    const trinket = document.getElementById("trinket01");
+    // =================================
+    // TRINKET INTERACTIONS
+    // =================================
+
+    const trinkets = document.querySelectorAll(".trinket-button");
 
     const swingAnimations = [
         "swing-one",
@@ -34,33 +37,38 @@ document.addEventListener("DOMContentLoaded", function () {
         "swing-three"
     ];
 
-    let lastSwing = "";
+    trinkets.forEach(function (trinket) {
 
-    trinket.addEventListener("click", function () {
+        let lastSwing = "";
 
-        // Choose a random animation
-        let randomSwing;
+        trinket.addEventListener("click", function () {
 
-        do {
-            randomSwing = swingAnimations[
-                Math.floor(Math.random() * swingAnimations.length)
-            ];
-        } while (randomSwing === lastSwing);
+            // Choose a random animation
+            let randomSwing;
 
-        lastSwing = randomSwing;
+            do {
+                randomSwing = swingAnimations[
+                    Math.floor(Math.random() * swingAnimations.length)
+                ];
+            } while (randomSwing === lastSwing);
 
-        // Remove previous animations
-        trinket.classList.remove(
-            "swing-one",
-            "swing-two",
-            "swing-three"
-        );
+            lastSwing = randomSwing;
 
-        // Restart animation
-        void trinket.offsetWidth;
+            // Remove previous animations
+            trinket.classList.remove(
+                "swing-one",
+                "swing-two",
+                "swing-three"
+            );
 
-        // Play new animation
-        trinket.classList.add(randomSwing);
+            // Restart animation
+            void trinket.offsetWidth;
+
+            // Play new animation
+            trinket.classList.add(randomSwing);
+
+        });
 
     });
+
 });

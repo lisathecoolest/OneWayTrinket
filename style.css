@@ -223,19 +223,20 @@ footer p {
 }
 
 /* =================================
-   TRINKET 01
+   TRINKETS
 ================================= */
 
 .book-stage {
     position: relative;
 }
 
+/* GENERAL TRINKET SETTINGS */
+
 .trinket-button {
     position: absolute;
 
     /* Position to the right of the comic */
     left: calc(50% + 500px);
-    top: 50%;
 
     width: 120px;
     height: auto;
@@ -248,9 +249,7 @@ footer p {
 
     z-index: 10;
 
-    transform: translateY(-50%);
     scale: 1;
-
     transition: scale 0.2s ease;
 }
 
@@ -262,7 +261,28 @@ footer p {
     transform-origin: 50% 5%;
 }
 
-/* Slight enlargement on hover */
+/* TOP TRINKET */
+
+.trinket-top {
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+/* MIDDLE TRINKET (ORIGINAL) */
+
+#trinket01 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* BOTTOM TRINKET */
+
+.trinket-bottom {
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+/* HOVER EFFECT */
 
 .trinket-button:hover {
     scale: 1.08;
@@ -284,7 +304,7 @@ footer p {
     animation: swingThree 0.75s ease-in-out;
 }
 
-/* Animation 1: gentle swing */
+/* ANIMATION 1 */
 
 @keyframes swingOne {
     0%   { transform: rotate(0deg); }
@@ -294,7 +314,7 @@ footer p {
     100% { transform: rotate(0deg); }
 }
 
-/* Animation 2: bigger swing */
+/* ANIMATION 2 */
 
 @keyframes swingTwo {
     0%   { transform: rotate(0deg); }
@@ -304,7 +324,7 @@ footer p {
     100% { transform: rotate(0deg); }
 }
 
-/* Animation 3: quick little swing */
+/* ANIMATION 3 */
 
 @keyframes swingThree {
     0%   { transform: rotate(0deg); }
